@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="logIn.css">
+    <script src="logIn.js" defer></script>
+</head>
+<body>
+    <div id="div-image">
+        <img id="logo" src="water.png">
+    </div>
+<div id="main">
+    <div class="container">
+        <h2>WaterWayWorks<br></h2>
+        <p><span id="span1">Log in to continue</span></p>
+        <form id="login-form" method="POST" action="../phpFolder/clientLogin.php"> <!-- Form submits to clientLogin.php -->
+            <input type="text" name="username" id="username" placeholder="Username" required><br>
+            <input type="password" name="password" id="password" placeholder="Password" required><br>
+            <button type="submit">Log In</button>
+        </form>
+        <div class="asking">
+            <p class="account-prompt">
+                <span id="span2">Don’t have an account yet?</span> <br> <br>
+                No worries! You can directly ask the admin for an account request. 
+                <a class="signup-link1" href="https://wa.me/639760998892" target="_blank">Request Sign Up</a>
+            </p>
+            <p id="dash-line"> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+            <p class="admin-prompt">
+                <a class="signup-link2" href="../adminLogInFolder/adminLogIn.html">Click to access the Admin login page</a>
+            </p>
+        </div>
+        
+    </div>
+</div>
+<div id="footer">
+        <p>
+            &copy; Water-Way Works <br><br>
+            Accessible and clean water is essential for public health, hygiene, and well-being. Reliable water services ensure that everyone has access to safe drinking water, supporting both quality of life and economic growth. However, increasing global population and rising water demand are stressing already limited resources. Combined with climate change and pollution, this threatens water availability. Sustainable water management is key to ensuring equitable distribution now and in the future. <br><br>
+        </p>
+</div>
+</body>
+</html>

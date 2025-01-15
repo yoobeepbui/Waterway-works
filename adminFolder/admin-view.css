@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #08f2f2, #273572, #e32678);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+        @keyframes gradient { /*sheesh it's moving*/
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+/*Header Styling */
+header {
+    background-color: #15262ed3;
+    padding-top: 20px ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: 50px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Layout: Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Logo Section */
+    .logo h1 {
+        margin: 0;
+        color: white;
+        font-size: 27px;
+        font-weight: 700;
+    }
+/* Navigation Menu */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: #15262e;
+            border: 2px solid white;
+        }
+
+/* Logout Specific Styling */
+        nav ul li:last-child a {
+            color: #ff4b4b;
+            border: 2px solid transparent;
+            font-weight: bold;
+        }
+
+        nav ul li:last-child a:hover {
+            background-color: #ff4b4b;
+            color: white;
+            border: 2px solid #ff4b4b;
+        }
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+    gap: 50px;
+    margin: 0;
+    margin-top: 73px;
+}
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.721);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 5px 20px 20px;
+        width: 65%; /*tinamad nako gumamit ng flex cuz it's the same*/
+    }
+
+    /*
+    .payment-history-container {
+        background-color: rgba(255, 255, 255, 0.721);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 35%;
+    }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 17px;
+        }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            label {
+                margin-bottom: 5px;
+                font-weight: bold;
+                font-size: 13px;
+            }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+            flex: 1;
+        }
+        
+        */
+        
+
+    .button-group {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-top: 1px;
+    }
+        
+        .update-btn {
+            background-color: #15262e;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 49%;
+        }
+
+        button.update-btn:hover {
+            background-color: #1f3a46;
+        }
+
+/* Payment History Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #15262e;
+    }
+    th {
+        background-color: #15262e;
+        color: white;
+    }
+
+/*
+    .divNgPassword {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #toggleBtn {
+        background-color: #1f3a46;
+        color: white;
+        height: 30px;
+        padding: 5px 10px;
+        margin-bottom: 13px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+        #toggleBtn:hover {
+            background-color: #15262e;
+        }
+*/
